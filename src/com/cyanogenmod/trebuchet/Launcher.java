@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
@@ -100,8 +100,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.common.Search;
-import com.cyanogenmod.trebuchet.DropTarget.DragObject;
-import com.cyanogenmod.trebuchet.preference.*;
+import com.factoryrom.launcher.DropTarget.DragObject;
+import com.factoryrom.launcher.preference.*;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -125,7 +125,7 @@ import java.util.Set;
 public final class Launcher extends Activity
         implements View.OnClickListener, OnLongClickListener, LauncherModel.Callbacks,
                    View.OnTouchListener {
-    private static final String TAG = "Trebuchet.Launcher";
+    private static final String TAG = "FactoryROM.Launcher";
 
     static final boolean PROFILE_STARTUP = false;
     static final boolean DEBUG_WIDGETS = false;
@@ -159,7 +159,7 @@ public final class Launcher extends Activity
 
     // The Intent extra that defines whether to ignore the launch animation
     static final String INTENT_EXTRA_IGNORE_LAUNCH_ANIMATION =
-            "com.cyanogenmod.trebuchet.intent.extra.shortcut.INGORE_LAUNCH_ANIMATION";
+            "com.factoryrom.launcher.intent.extra.shortcut.INGORE_LAUNCH_ANIMATION";
 
     // Type: int
     private static final String RUNTIME_STATE_CURRENT_SCREEN = "launcher.current_screen";
@@ -664,7 +664,7 @@ public final class Launcher extends Activity
 
         // For example, the user would PICK_SHORTCUT for "Music playlist", and we
         // launch over to the Music app to actually CREATE_SHORTCUT.
-        if (resultCode == RESULT_OK && mPendingAddInfo.container != com.cyanogenmod.trebuchet.ItemInfo.NO_ID) {
+        if (resultCode == RESULT_OK && mPendingAddInfo.container != com.factoryrom.launcher.ItemInfo.NO_ID) {
             final PendingAddArguments args = new PendingAddArguments();
             args.requestCode = requestCode;
             args.intent = data;
@@ -880,7 +880,7 @@ public final class Launcher extends Activity
         final long pendingAddContainer = savedState.getLong(RUNTIME_STATE_PENDING_ADD_CONTAINER, -1);
         final int pendingAddScreen = savedState.getInt(RUNTIME_STATE_PENDING_ADD_SCREEN, -1);
 
-        if (pendingAddContainer != com.cyanogenmod.trebuchet.ItemInfo.NO_ID && pendingAddScreen > -1) {
+        if (pendingAddContainer != com.factoryrom.launcher.ItemInfo.NO_ID && pendingAddScreen > -1) {
             mPendingAddInfo.container = pendingAddContainer;
             mPendingAddInfo.screen = pendingAddScreen;
             mPendingAddInfo.cellX = savedState.getInt(RUNTIME_STATE_PENDING_ADD_CELL_X);
@@ -1053,7 +1053,7 @@ public final class Launcher extends Activity
         if (info != null) {
             info.setActivity(data.getComponent(), Intent.FLAG_ACTIVITY_NEW_TASK |
                     Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
-            info.container = com.cyanogenmod.trebuchet.ItemInfo.NO_ID;
+            info.container = com.factoryrom.launcher.ItemInfo.NO_ID;
             mWorkspace.addApplicationShortcut(info, layout, container, screen,
                     isWorkspaceLocked(), cellX, cellY);
         } else {
@@ -1247,7 +1247,7 @@ public final class Launcher extends Activity
 
                 // Reset AllApps to its initial state only if we are not in the middle of
                 // processing a multi-step drop
-                if (mAppsCustomizeTabHost != null && mPendingAddInfo.container == com.cyanogenmod.trebuchet.ItemInfo.NO_ID) {
+                if (mAppsCustomizeTabHost != null && mPendingAddInfo.container == com.factoryrom.launcher.ItemInfo.NO_ID) {
                     mAppsCustomizeTabHost.reset();
                     showWorkspace(false);
                 }
@@ -1489,7 +1489,7 @@ public final class Launcher extends Activity
         // this state is reflected.
         closeFolder();
 
-        if (mPendingAddInfo.container != com.cyanogenmod.trebuchet.ItemInfo.NO_ID && mPendingAddInfo.screen > -1 &&
+        if (mPendingAddInfo.container != com.factoryrom.launcher.ItemInfo.NO_ID && mPendingAddInfo.screen > -1 &&
                 mWaitingForResult) {
             outState.putLong(RUNTIME_STATE_PENDING_ADD_CONTAINER, mPendingAddInfo.container);
             outState.putInt(RUNTIME_STATE_PENDING_ADD_SCREEN, mPendingAddInfo.screen);
@@ -1729,7 +1729,7 @@ public final class Launcher extends Activity
     }
 
     private void resetAddInfo() {
-        mPendingAddInfo.container = com.cyanogenmod.trebuchet.ItemInfo.NO_ID;
+        mPendingAddInfo.container = com.factoryrom.launcher.ItemInfo.NO_ID;
         mPendingAddInfo.screen = -1;
         mPendingAddInfo.cellX = mPendingAddInfo.cellY = -1;
         mPendingAddInfo.spanX = mPendingAddInfo.spanY = -1;

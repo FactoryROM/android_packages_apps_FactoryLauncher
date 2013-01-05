@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet.widget;
+package com.factoryrom.launcher.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -30,7 +30,7 @@ import android.view.ViewGroup;
 import android.view.animation.Interpolator;
 import android.widget.ArrayAdapter;
 import android.widget.SpinnerAdapter;
-import com.cyanogenmod.trebuchet.R;
+import com.factoryrom.launcher.R;
 
 public abstract class CustomAbsSpinner extends CustomAdapterView<SpinnerAdapter> {
 

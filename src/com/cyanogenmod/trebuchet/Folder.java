@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -44,8 +44,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.cyanogenmod.trebuchet.FolderInfo.FolderListener;
-import com.cyanogenmod.trebuchet.preference.PreferencesProvider;
+import com.factoryrom.launcher.FolderInfo.FolderListener;
+import com.factoryrom.launcher.preference.PreferencesProvider;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -57,7 +57,7 @@ import java.util.Comparator;
 public class Folder extends LinearLayout implements DragSource, View.OnClickListener,
         View.OnLongClickListener, DropTarget, FolderListener, TextView.OnEditorActionListener,
         View.OnFocusChangeListener {
-    private static final String TAG = "Trebuchet.Folder";
+    private static final String TAG = "FactoryROM.Folder";
 
     protected DragController mDragController;
     protected Launcher mLauncher;

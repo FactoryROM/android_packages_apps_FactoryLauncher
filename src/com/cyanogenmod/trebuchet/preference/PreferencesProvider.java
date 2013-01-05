@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet.preference;
+package com.factoryrom.launcher.preference;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.cyanogenmod.trebuchet.LauncherApplication;
-import com.cyanogenmod.trebuchet.Workspace;
-import com.cyanogenmod.trebuchet.AppsCustomizePagedView;
+import com.factoryrom.launcher.LauncherApplication;
+import com.factoryrom.launcher.Workspace;
+import com.factoryrom.launcher.AppsCustomizePagedView;
 
 import java.util.Map;
 
 public final class PreferencesProvider {
-    public static final String PREFERENCES_KEY = "com.cyanogenmod.trebuchet_preferences";
+    public static final String PREFERENCES_KEY = "com.factoryrom.launcher_preferences";
 
     public static final String PREFERENCES_CHANGED = "preferences_changed";
 

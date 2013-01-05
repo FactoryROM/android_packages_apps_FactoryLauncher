@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.animation.AnimatorSet;
 import android.animation.ValueAnimator;
@@ -59,8 +59,8 @@ import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.cyanogenmod.trebuchet.DropTarget.DragObject;
-import com.cyanogenmod.trebuchet.preference.PreferencesProvider;
+import com.factoryrom.launcher.DropTarget.DragObject;
+import com.factoryrom.launcher.preference.PreferencesProvider;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -224,7 +224,7 @@ public class AppsCustomizePagedView extends PagedViewWithDraggableItems implemen
         View.OnClickListener, View.OnKeyListener, DragSource,
         PagedViewIcon.PressedCallback, PagedViewWidget.ShortPressListener,
         LauncherTransitionable {
-    private static final String TAG = "Trebuchet.AppsCustomizePagedView";
+    private static final String TAG = "FactoryROM.AppsCustomizePagedView";
 
     /**
      * The different content types that this paged view can show.

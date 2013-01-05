@@ -17,7 +17,7 @@
 package com.cyanogenmod.trebuchet.stress;
 
 
-import com.cyanogenmod.trebuchet.Launcher;
+import com.factoryrom.launcher.Launcher;
 
 import android.content.pm.ActivityInfo;
 import android.os.SystemClock;

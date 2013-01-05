@@ -1,4 +1,4 @@
-package com.cyanogenmod.trebuchet.preference;
+package com.factoryrom.launcher.preference;
 
 import android.app.AlertDialog;
 import android.app.ListActivity;
@@ -26,7 +26,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.cyanogenmod.trebuchet.R;
+import com.factoryrom.launcher.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;

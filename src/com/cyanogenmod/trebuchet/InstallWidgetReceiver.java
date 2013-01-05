@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import java.util.List;
 
@@ -33,7 +33,7 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
-import com.cyanogenmod.trebuchet.R;
+import com.factoryrom.launcher.R;
 
 
 /**
@@ -42,18 +42,18 @@ import com.cyanogenmod.trebuchet.R;
  */
 public class InstallWidgetReceiver {
     public static final String ACTION_INSTALL_WIDGET =
-            "com.cyanogenmod.trebuchet.action.INSTALL_WIDGET";
+            "com.factoryrom.launcher.action.INSTALL_WIDGET";
     public static final String ACTION_SUPPORTS_CLIPDATA_MIMETYPE =
-            "com.cyanogenmod.trebuchet.action.SUPPORTS_CLIPDATA_MIMETYPE";
+            "com.factoryrom.launcher.action.SUPPORTS_CLIPDATA_MIMETYPE";
 
     // Currently not exposed.  Put into Intent when we want to make it public.
     // TEMP: Should we call this "EXTRA_APPWIDGET_PROVIDER"?
     public static final String EXTRA_APPWIDGET_COMPONENT =
-        "com.cyanogenmod.trebuchet.extra.widget.COMPONENT";
+        "com.factoryrom.launcher.extra.widget.COMPONENT";
     public static final String EXTRA_APPWIDGET_CONFIGURATION_DATA_MIME_TYPE =
-        "com.cyanogenmod.trebuchet.extra.widget.CONFIGURATION_DATA_MIME_TYPE";
+        "com.factoryrom.launcher.extra.widget.CONFIGURATION_DATA_MIME_TYPE";
     public static final String EXTRA_APPWIDGET_CONFIGURATION_DATA =
-        "com.cyanogenmod.trebuchet.extra.widget.CONFIGURATION_DATA";
+        "com.factoryrom.launcher.extra.widget.CONFIGURATION_DATA";
 
     /**
      * A simple data class that contains per-item information that the adapter below can reference.

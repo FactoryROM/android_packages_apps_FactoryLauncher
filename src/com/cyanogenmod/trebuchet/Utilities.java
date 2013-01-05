@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -37,7 +37,7 @@ import android.util.DisplayMetrics;
  */
 final class Utilities {
     @SuppressWarnings("unused")
-    private static final String TAG = "Trebuchet.Utilities";
+    private static final String TAG = "FactoryROM.Utilities";
 
     private static int sIconWidth = -1;
     private static int sIconHeight = -1;

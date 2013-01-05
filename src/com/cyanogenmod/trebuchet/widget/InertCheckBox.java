@@ -1,4 +1,4 @@
-package com.cyanogenmod.trebuchet.widget;
+package com.factoryrom.launcher.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;

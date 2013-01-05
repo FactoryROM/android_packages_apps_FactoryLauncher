@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet.preference;
+package com.factoryrom.launcher.preference;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -34,8 +34,8 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
-import com.cyanogenmod.trebuchet.LauncherApplication;
-import com.cyanogenmod.trebuchet.R;
+import com.factoryrom.launcher.LauncherApplication;
+import com.factoryrom.launcher.R;
 
 import java.util.Calendar;
 import java.util.List;
@@ -44,7 +44,7 @@ import java.util.Random;
 public class Preferences extends PreferenceActivity
         implements SharedPreferences.OnSharedPreferenceChangeListener {
 
-    private static final String TAG = "Trebuchet.Preferences";
+    private static final String TAG = "FactoryROM.Preferences";
 
     private SharedPreferences mPreferences;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -23,7 +23,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 public class PreloadReceiver extends BroadcastReceiver {
-    private static final String TAG = "Trebuchet.PreloadReceiver";
+    private static final String TAG = "FactoryROM.PreloadReceiver";
     private static final boolean LOGD = false;
 
     public static final String EXTRA_WORKSPACE_NAME =
@@ -36,7 +36,7 @@ public class PreloadReceiver extends BroadcastReceiver {
         if (provider != null) {
             String name = intent.getStringExtra(EXTRA_WORKSPACE_NAME);
             final int workspaceResId = !TextUtils.isEmpty(name)
-                    ? context.getResources().getIdentifier(name, "xml", "com.cyanogenmod.trebuchet") : 0;
+                    ? context.getResources().getIdentifier(name, "xml", "com.factoryrom.launcher") : 0;
             if (LOGD) {
                 Log.d(TAG, "workspace name: " + name + " id: " + workspaceResId);
             }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.app.SearchManager;
 import android.appwidget.AppWidgetHost;
@@ -45,7 +45,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.util.Xml;
 
-import com.cyanogenmod.trebuchet.LauncherSettings.Favorites;
+import com.factoryrom.launcher.LauncherSettings.Favorites;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -56,14 +56,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LauncherProvider extends ContentProvider {
-    private static final String TAG = "Trebuchet.LauncherProvider";
+    private static final String TAG = "FactoryROM.LauncherProvider";
     private static final boolean LOGD = false;
 
     private static final String DATABASE_NAME = "launcher.db";
 
     private static final int DATABASE_VERSION = 14;
 
-    static final String AUTHORITY = "com.cyanogenmod.trebuchet.settings";
+    static final String AUTHORITY = "com.factoryrom.launcher.settings";
 
     static final String TABLE_FAVORITES = "favorites";
     static final String PARAMETER_NOTIFY = "notify";
@@ -73,7 +73,7 @@ public class LauncherProvider extends ContentProvider {
             "DEFAULT_WORKSPACE_RESOURCE_ID";
 
     private static final String ACTION_APPWIDGET_DEFAULT_WORKSPACE_CONFIGURE =
-            "com.cyanogenmod.trebuchet.action.APPWIDGET_DEFAULT_WORKSPACE_CONFIGURE";
+            "com.factoryrom.launcher.action.APPWIDGET_DEFAULT_WORKSPACE_CONFIGURE";
 
     /**
      * {@link Uri} triggered at any registered {@link android.database.ContentObserver} when

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.view.View;
 
-import com.cyanogenmod.trebuchet.DropTarget.DragObject;
+import com.factoryrom.launcher.DropTarget.DragObject;
 
 /**
  * Interface defining an object that can originate a drag.

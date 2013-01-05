@@ -1,4 +1,4 @@
-package com.cyanogenmod.trebuchet.widget;
+package com.factoryrom.launcher.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -6,7 +6,7 @@ import android.widget.CheckBox;
 import android.widget.Checkable;
 import android.widget.LinearLayout;
 
-import com.cyanogenmod.trebuchet.R;
+import com.factoryrom.launcher.R;
 
 /*
  * This class is useful for using inside of ListView that needs to have checkable items.

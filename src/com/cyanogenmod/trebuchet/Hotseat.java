@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -25,7 +25,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import com.cyanogenmod.trebuchet.preference.PreferencesProvider;
+import com.factoryrom.launcher.preference.PreferencesProvider;
 
 import java.util.Arrays;
 

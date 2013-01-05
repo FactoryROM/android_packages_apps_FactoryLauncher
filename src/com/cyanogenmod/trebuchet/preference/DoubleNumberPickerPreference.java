@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet.preference;
+package com.factoryrom.launcher.preference;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -27,7 +27,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.EditText;
 import android.widget.NumberPicker;
-import com.cyanogenmod.trebuchet.R;
+import com.factoryrom.launcher.R;
 
 /*
  * @author Danesh

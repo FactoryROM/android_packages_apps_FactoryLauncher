@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.app.WallpaperManager;
 import android.content.Context;
@@ -25,7 +25,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class ShortcutAndWidgetContainer extends ViewGroup {
-    private static final String TAG = "Trebuchet.CellLayoutChildren";
+    private static final String TAG = "FactoryROM.CellLayoutChildren";
 
     // These are temporary variables to prevent having to allocate a new object just to
     // return an (x, y) value from helper functions. Do NOT use them to maintain other state.

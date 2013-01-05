@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.app.ActivityManager;
 import android.content.ComponentName;
@@ -35,7 +35,7 @@ import java.util.HashMap;
  */
 public class IconCache {
     @SuppressWarnings("unused")
-    private static final String TAG = "Trebuchet.IconCache";
+    private static final String TAG = "FactoryROM.IconCache";
 
     private static final int INITIAL_ICON_CACHE_CAPACITY = 50;
 

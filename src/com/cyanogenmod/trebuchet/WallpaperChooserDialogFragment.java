@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -38,8 +38,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.SpinnerAdapter;
-import com.cyanogenmod.trebuchet.widget.CustomAdapterView;
-import com.cyanogenmod.trebuchet.widget.EcoGallery;
+import com.factoryrom.launcher.widget.CustomAdapterView;
+import com.factoryrom.launcher.widget.EcoGallery;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -47,8 +47,8 @@ import java.util.ArrayList;
 public class WallpaperChooserDialogFragment extends DialogFragment implements
         CustomAdapterView.OnItemSelectedListener, CustomAdapterView.OnItemClickListener {
 
-    private static final String TAG = "Trebuchet.WallpaperChooserDialogFragment";
-    private static final String EMBEDDED_KEY = "com.cyanogenmod.trebuchet."
+    private static final String TAG = "FactoryROM.WallpaperChooserDialogFragment";
+    private static final String EMBEDDED_KEY = "com.factoryrom.launcher."
             + "WallpaperChooserDialogFragment.EMBEDDED_KEY";
 
     private boolean mEmbedded;
@@ -192,8 +192,8 @@ public class WallpaperChooserDialogFragment extends DialogFragment implements
 
         final Resources resources = getResources();
         // Context.getPackageName() may return the "original" package name,
-        // com.cyanogenmod.trebuchet; Resources needs the real package name,
-        // com.cyanogenmod.trebuchet. So we ask Resources for what it thinks the
+        // com.factoryrom.launcher; Resources needs the real package name,
+        // com.factoryrom.launcher. So we ask Resources for what it thinks the
         // package name should be.
         final String packageName = resources.getResourcePackageName(R.array.wallpapers);
 

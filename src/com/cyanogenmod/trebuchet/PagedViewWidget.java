@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.appwidget.AppWidgetProviderInfo;
 import android.content.Context;
@@ -33,7 +33,7 @@ import android.widget.TextView;
  * The linear layout used strictly for the widget/wallpaper tab of the customization tray
  */
 public class PagedViewWidget extends LinearLayout {
-    private static final String TAG = "Trebuchet.PagedViewWidgetLayout";
+    private static final String TAG = "FactoryROM.PagedViewWidgetLayout";
 
     private static boolean sDeletePreviewsWhenDetachedFromWindow = true;
 

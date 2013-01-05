@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -32,7 +32,7 @@ public class PagedViewIcon extends TextView {
     }
 
     @SuppressWarnings("unused")
-    private static final String TAG = "Trebuchet.PagedViewIcon";
+    private static final String TAG = "FactoryROM.PagedViewIcon";
     private static final float PRESS_ALPHA = 0.4f;
 
     private PagedViewIcon.PressedCallback mPressedCallback;

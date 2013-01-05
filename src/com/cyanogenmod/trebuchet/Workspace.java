@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -60,9 +60,9 @@ import android.view.animation.Interpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.cyanogenmod.trebuchet.FolderIcon.FolderRingAnimator;
-import com.cyanogenmod.trebuchet.LauncherSettings.Favorites;
-import com.cyanogenmod.trebuchet.preference.PreferencesProvider;
+import com.factoryrom.launcher.FolderIcon.FolderRingAnimator;
+import com.factoryrom.launcher.LauncherSettings.Favorites;
+import com.factoryrom.launcher.preference.PreferencesProvider;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -78,7 +78,7 @@ import java.util.Set;
 public class Workspace extends PagedView
         implements DropTarget, DragSource, DragScroller, View.OnTouchListener,
         DragController.DragListener, LauncherTransitionable, ViewGroup.OnHierarchyChangeListener {
-    private static final String TAG = "Trebuchet.Workspace";
+    private static final String TAG = "FactoryROM.Workspace";
 
     // Y rotation to apply to the workspace screens
     private static final float WORKSPACE_ROTATION = 12.5f;

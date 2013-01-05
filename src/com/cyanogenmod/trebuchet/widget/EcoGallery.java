@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet.widget;
+package com.factoryrom.launcher.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -34,7 +34,7 @@ import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.view.animation.Transformation;
 import android.widget.Scroller;
-import com.cyanogenmod.trebuchet.R;
+import com.factoryrom.launcher.R;
 
 import java.lang.reflect.Field;
 

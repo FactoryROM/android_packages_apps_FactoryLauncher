@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.content.Context;
 import android.graphics.PointF;
@@ -26,7 +26,7 @@ import android.util.Log;
  *
  */
 public interface DropTarget {
-    static final String TAG = "Trebuchet.DropTarget";
+    static final String TAG = "FactoryROM.DropTarget";
 
     class DragObject {
         public int x = -1;

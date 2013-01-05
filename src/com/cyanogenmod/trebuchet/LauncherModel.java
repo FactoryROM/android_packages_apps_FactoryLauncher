@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.app.SearchManager;
 import android.appwidget.AppWidgetManager;
@@ -66,7 +66,7 @@ import java.util.Set;
  */
 public class LauncherModel extends BroadcastReceiver {
     private static final boolean DEBUG_LOADERS = false;
-    private static final String TAG = "Trebuchet.LauncherModel";
+    private static final String TAG = "FactoryROM.LauncherModel";
 
     private static final int ITEMS_CHUNK = 6; // batch size for the workspace icons
     private final boolean mAppsCanBeOnExternalStorage;

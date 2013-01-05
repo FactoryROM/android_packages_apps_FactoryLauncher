@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
-import com.cyanogenmod.trebuchet.R;
+import com.factoryrom.launcher.R;
 
 import android.app.Activity;
 import android.app.DialogFragment;
@@ -25,7 +25,7 @@ import android.os.Bundle;
 
 public class WallpaperChooser extends Activity {
     @SuppressWarnings("unused")
-    private static final String TAG = "Trebuchet.WallpaperChooser";
+    private static final String TAG = "FactoryROM.WallpaperChooser";
 
     @Override
     public void onCreate(Bundle icicle) {

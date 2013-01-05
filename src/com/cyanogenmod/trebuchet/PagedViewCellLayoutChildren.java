@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet;
+package com.factoryrom.launcher;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -27,7 +27,7 @@ import android.view.ViewGroup;
  * to give a preview of its contents.
  */
 public class PagedViewCellLayoutChildren extends ViewGroup {
-    private static final String TAG = "Trebuchet.PagedViewCellLayout";
+    private static final String TAG = "FactoryROM.PagedViewCellLayout";
 
     private boolean mCenterContent;
 
